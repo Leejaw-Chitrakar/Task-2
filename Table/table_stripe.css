@@ -1,0 +1,45 @@
+/* Zabra strip */
+
+#animal-table{
+    width: 50%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+/*
+decendent Selector: select all 
+the tr tag inside the animal-table id
+*/
+
+#animal-table tr{
+    height: 40px;
+    border-bottom: 2px solid gray;
+}
+
+
+/* 
+Psudo class nth-child : select the element 
+on the basis of arugmnet provided
+*/
+#animal-table tr:nth-child(odd){
+    background-color: #949393;
+}
+
+/* Adding hover effect */
+
+#animal-table tr:hover{
+    background-color: #f00808;
+    color: black;
+    cursor: pointer;
+}
+
+/* Adding Vertical Stripe */
+
+#animal-table th:nth-child(3),
+#animal-table th:nth-child(5),
+#animal-table td:nth-child(3),
+#animal-table td:nth-child(5){
+    font-style: italic;
+    color: yellow;
+    cursor: pointer;
+}
